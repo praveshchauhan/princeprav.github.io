@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Instance Creation</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+	<!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center">Instance Creation Form</h1>
+		<ul id="errorMessage" class="text-danger"></ul>
+		<form method="get" action="#" id="instanceForm" onsubmit="return false">
+			<div class="form-group">
+
+				<label for="instanceName">
+					Instance Name
+				</label>
+
+				<input type="text" id="instanceName" class="form-control" required="" minlength="5" data-type="name" placeholder="Instance Name" />
+
+			</div>
+			<div class="form-group">
+
+				<label for="mobileNumber">
+					Mobile Number
+				</label>
+
+				<input type="text" id="mobileNumber" class="form-control" required="" minlength="10" maxlength="10" data-type="mobileno" placeholder="8801266789" />
+
+			</div>
+			<div class="form-group">
+
+				<label for="emailId">
+					Email
+				</label>
+
+				<input type="email" id="emailId" class="form-control" required="" data-type="email" placeholder="abc@domain.com" />
+
+			</div>
+			<div class="form-group">
+
+				<label for="referralCode">
+					Referral Code
+				</label>
+
+				<input type="text" id="referralCode" class="form-control" data-type="refcode" />
+
+			</div>
+			<div class="form-group text-center">
+				<input type="button" value="Create New Instance" id="submitBtn" class="btn btn-primary" onclick="InstanceCreationForm.validate()" />
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
